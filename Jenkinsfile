@@ -1,6 +1,6 @@
 
 pipeline {
-    agent node { label 'LocalHost' }
+    agent any
     stages {
         stage('Example Build') {
             steps {
