@@ -6,6 +6,6 @@ echo "$s3bucket"
 
 aws s3 mb s3://"$s3bucket"
 
-aws s3 cp ./ s3://"$s3bucket" 
+aws s3 cp ./ s3://"$s3bucket" --recursive --exclude "*"  --include "*.sh"
 
-aws s3 ls "$s3bucket" --include "*.sh"
+aws s3 ls "$s3bucket"
