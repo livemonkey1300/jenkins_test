@@ -5,6 +5,7 @@ pipeline {
         stage('Example Build') {
             steps {
                 sh 'ls -la'
+                sh './run.sh'
             }
         }
     }
