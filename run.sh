@@ -1,4 +1,4 @@
 whoami
 aws s3 ls
 
-echo "$Environment $JOB_NAME"
+echo "$JOB_NAME-$Environment"
